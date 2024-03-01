@@ -35,7 +35,7 @@ export default function Page() {
               </a>
             </p> */}
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
-              {RESUME_DATA.contact.email ? (
+              {/* {RESUME_DATA.contact.email ? (
                 <Button
                   className="size-8"
                   variant="outline"
@@ -58,7 +58,7 @@ export default function Page() {
                     <PhoneIcon className="size-4" />
                   </a>
                 </Button>
-              ) : null}
+              ) : null} */}
               {RESUME_DATA.contact.social.map((social) => (
                 <Button
                   key={social.name}
@@ -73,7 +73,7 @@ export default function Page() {
                 </Button>
               ))}
             </div>
-            <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
+            {/* <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (
                 <a href={`mailto:${RESUME_DATA.contact.email}`}>
                   <span className="underline">{RESUME_DATA.contact.email}</span>
@@ -84,7 +84,7 @@ export default function Page() {
                   <span className="underline">{RESUME_DATA.contact.tel}</span>
                 </a>
               ) : null}
-            </div>
+            </div> */}
           </div>
 
           <Avatar className="size-28">
